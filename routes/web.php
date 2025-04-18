@@ -4,9 +4,6 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ArticleController;
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
 // Route de la page d'accueil (affiche les derniers articles)
 Route::get('/', [ArticleController::class, 'index'])->name('home');
 
